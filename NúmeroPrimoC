@@ -1,0 +1,21 @@
+int main(void) {
+  int n, s, c;
+  printf("Digite um número para descobrir se ele é primo: ");
+  scanf("%d", &n);
+  c = 0;
+  s = n;
+  while (s > 1) {
+    if (n % s == 0) {
+      c = c + 1;
+      s = s - 1;
+    }else{
+     s = s - 1;}
+}
+if (c > 2) {
+    printf("O número %d não é primo.\n", n);
+  } else {
+    printf("O número %d é primo.\n", n);
+}
+  
+return 0;
+}
