@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+int main(void){
+  int linha = 0, coluna = 0, largura, altura;
+  printf("digite a largura: ");
+  scanf("%d", &largura);
+  printf("digite a altura: ");
+  scanf("%d", &altura);
+  
+  while (coluna < largura){
+    while (linha < altura){
+      printf("#");
+      linha += 1;
+    }
+    printf("\n");
+    coluna += 1;
+    linha = 0;
+  }
+  return 0;
+}
