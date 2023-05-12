@@ -7,8 +7,8 @@ int main(void){
   printf("digite a altura: ");
   scanf("%d", &altura);
   
-  while (coluna < largura){
-    while (linha < altura){
+  while (linha < largura){
+    while (coluna < altura){
       printf("#");
       linha += 1;
     }
@@ -18,3 +18,4 @@ int main(void){
   }
   return 0;
 }
+TA ERRADO, LINHA TROCADA COM COLUNA
